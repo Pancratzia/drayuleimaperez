@@ -1,32 +1,38 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
