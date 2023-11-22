@@ -1,3 +1,4 @@
+@use 'variables' as v;
 * {
   box-sizing: border-box;
 }
@@ -15,6 +16,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  font-family: v.$fuenteParrafos;
+  min-height: 100vh;
+  background: linear-gradient(to top, lighten(v.$rosado, 20%), lighten(v.$rosado, 40%), lighten(v.$rosado, 60%), lighten(v.$rosado, 80%)) no-repeat;
 }
 
 h1,
@@ -25,6 +29,19 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: v.$fuenteHeadings;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
