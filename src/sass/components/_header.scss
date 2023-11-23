@@ -1,0 +1,91 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+  background-color: v.$blanco;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  @include m.container;
+  &__imagen {
+    width: 7rem;
+    display: grid;
+    place-items: center;
+  }
+  &__navegacion {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    &.abierto {
+      span{
+        transition: all .5s ease-in-out;
+        &:nth-child(1){
+          transform: rotate(45deg);
+          transform-origin: 0;
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        
+        &:nth-child(3){
+          transform: rotate(-45deg);
+          transform-origin: 0;
+        }
+      }
+    }
+
+    &.cerrado {
+      span{
+        transition: all .3s ease-in-out;
+      }
+    }
+    span{
+      &::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 2px;
+        background-color: v.$negro;
+        margin-right: 1.5rem;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}
+
+.nav {
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+
+  &.abierto {
+    height: auto;
+    opacity: 1;
+    .nav__enlace {
+      color: v.$negro;
+    }
+  }
+  
+  &.cerrado {
+    height: 0;
+    opacity: 0;
+    .nav__enlace {
+      color: transparent;
+    }
+  }
+  &__enlace {
+    transition: all .3s ease-in-out;
+  }
+  
+}
+
+.contenido {
+  margin-top: 10rem;
+}
