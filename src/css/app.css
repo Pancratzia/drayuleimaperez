@@ -17,8 +17,8 @@ body {
   padding: 0;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  min-height: 150vh;
-  background-color: gray;
+  min-height: calc(100vh - 10rem);
+  background: linear-gradient(to bottom right, #f7d0e6, white) no-repeat center center;
 }
 
 h1,
@@ -221,6 +221,99 @@ ul {
 
 .contenido {
   margin-top: 10rem;
+}
+
+.hero {
+  padding: 2rem 0;
+}
+.hero__grid {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .hero__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.hero__imagen {
+  display: grid;
+  place-items: center;
+}
+.hero__img {
+  position: relative;
+  width: 85%;
+}
+@media (min-width: 768px) {
+  .hero__img {
+    width: 70%;
+  }
+}
+.hero__img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid #d38db2;
+  border-radius: 3rem;
+  top: 1.2rem;
+  left: 1.6rem;
+  z-index: -1;
+}
+.hero__img img {
+  border-radius: 3rem;
+}
+.hero__contenido {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .hero__contenido {
+    text-align: left;
+  }
+}
+.hero__titulo {
+  color: #ab1d6c;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+}
+.hero__subtitulo {
+  text-transform: uppercase;
+  margin: 2rem 0;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  color: #304472;
+}
+.hero__texto {
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  line-height: 1.6;
+  color: #304472;
+}
+.hero__boton {
+  background-color: #ab1d6c;
+  padding: 1.6rem 4rem;
+  margin-top: 3rem;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+}
+.hero__boton:hover {
+  background-color: #7f1650;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
