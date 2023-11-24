@@ -6,7 +6,7 @@ const Hero = () => {
           <h1 className="hero__titulo">Dra. Yuleima Pérez</h1>
 
           <p className="hero__subtitulo">
-            Médico Especialista en Ginecologia y Obstetricia
+            Médico Especialista en Ginecología y Obstetricia
           </p>
 
           <p className="hero__texto">

@@ -206,7 +206,7 @@ ul {
     font-weight: 500;
     font-size: 1.4rem;
     font-family: "Signika", sans-serif;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent;
   }
   .nav--desktop__enlace:hover {
     cursor: pointer;
