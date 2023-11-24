@@ -1,0 +1,54 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.footer{
+
+    background-color: v.$blanco;
+    padding: 2rem 0;
+    
+    &__grid{
+        @include m.container;
+        @include m.grid(1, 2rem);
+
+        @include m.tablet{
+            @include m.grid(3, 2rem);
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    }
+
+    @include m.logo(3rem);
+
+    &__logo{
+        display: inline-flex;
+    }
+
+    &__logo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+
+        @include m.tablet{
+            align-items: flex-start;
+        }
+    }
+
+    &__titulo{
+        font-size: 2rem;
+    }
+
+    &__cita{
+        display: block;
+        letter-spacing: .15rem;
+        color: v.$azul;
+        font-size: 1.4rem;
+
+        &::before{
+            content: '“';
+        }
+
+        &::after{
+            content: '”';
+        }
+    }
+}

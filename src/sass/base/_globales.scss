@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-size: 1.6rem;
   font-family: v.$fuenteParrafos;
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 13rem);
   background: linear-gradient(
     to bottom right, lighten(v.$magenta, 50%), lighten(v.$magenta, 80%) 
   ) no-repeat center center; 

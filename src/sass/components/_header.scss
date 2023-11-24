@@ -18,20 +18,29 @@
   }
 
   &__info {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
     background-color: v.$azul;
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
     transition: all 0.3s ease-in-out;
 
     @include m.tablet {
-      gap: 5rem;
       font-size: 1.3rem;
+    }
+
+    &--container {
+      @include m.container;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      transition: all 0.3s ease-in-out;
+
+      @include m.tablet {
+        gap: 6rem;
+        font-size: 1.3rem;
+      }
     }
 
     &--a {
@@ -54,26 +63,8 @@
   padding: 1rem 0;
 
   @include m.container;
-  &__logo {
-    height: 7rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    img {
-      height: 100%;
-    }
-  }
-  &__titulo {
-    transition: all 0.3s ease-in-out;
-    font-size: 0;
+  @include m.logo (7rem);
 
-    @include m.phone {
-      display: block;
-      color: v.$rosado;
-      font-size: 2rem;
-      text-transform: uppercase;
-    }
-  }
   &__navegacion {
     display: flex;
     gap: 0.5rem;
@@ -181,7 +172,7 @@
         font-size: 1.4rem;
         font-family: v.$fuenteHeadings;
         border: 2px solid transparent;
-        
+
         &:hover {
           cursor: pointer;
           border-bottom: 2px solid v.$rosado;
