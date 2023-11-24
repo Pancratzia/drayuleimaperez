@@ -493,7 +493,8 @@ ul {
   font-weight: 700;
 }
 .copyright__p:first-of-type {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.6rem;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .copyright__p:first-of-type {
