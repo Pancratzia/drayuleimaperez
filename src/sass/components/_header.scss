@@ -12,8 +12,37 @@
     @include m.tablet {
       @include m.container;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+    }
+  }
+
+  &__info {
+    padding: 1rem 1.5rem;
+    background-color: v.$azul;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+
+    @include m.tablet {
+      gap: 5rem;
+      font-size: 1.3rem;
+    }
+
+    &--a {
+      color: v.$blanco;
+      svg {
+        margin-right: 0.3rem;
+        transition: all 0.3s ease-in-out;
+        @include m.tablet {
+          margin-right: 1rem;
+        }
+      }
     }
   }
 }
@@ -121,10 +150,10 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.4rem;
-    background-color: v.$rosado;
+    background-color: v.$magenta;
     font-family: v.$fuenteHeadings;
     padding: 1rem;
-    border: 1px solid darken(v.$rosado, 10%);
+    border: 1px solid darken(v.$magenta, 10%);
     transition: all 0.3s ease-in-out;
   }
 
@@ -143,7 +172,7 @@
     }
 
     &__enlace {
-      transition: all 0.3s;
+      transition: all 0.5s;
       @include m.tablet {
         text-align: center;
         color: v.$azul;
@@ -152,7 +181,7 @@
         font-size: 1.4rem;
         font-family: v.$fuenteHeadings;
         border: 2px solid transparent;
-
+        
         &:hover {
           cursor: pointer;
           border-bottom: 2px solid v.$rosado;
@@ -167,5 +196,5 @@
 }
 
 .contenido {
-  margin-top: 10rem;
+  margin-top: 13rem;
 }

@@ -11,6 +11,19 @@ const Header = () => {
 
   return (
     <header className="header">
+
+      <div className="header__info">
+        <a className="header__info--a" href="#">
+          <i className="fa-solid fa-phone"></i>
+          (+58) 416-654-2059
+        </a>
+
+        <a className="header__info--a" href="#">
+          <i className="fa-solid fa-location-dot"></i>
+          Edif. Cavendes, consultorio 1-6
+        </a>
+      </div>
+
       <div className="header__grid">
 
         <div className="barra">
