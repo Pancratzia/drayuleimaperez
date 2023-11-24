@@ -1,103 +1,128 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-.footer{
+.footer {
+  margin-top: 2rem;
+  background-color: v.$blanco;
 
-    margin-top: 2rem;
-    background-color: v.$blanco;
+  &__grid {
+    @include m.container;
+    @include m.grid(1, 2rem);
     padding: 2rem 0;
-    
-    &__grid{
-        @include m.container;
-        @include m.grid(1, 2rem);
 
-        @include m.tablet{
-            @include m.grid(3, 2rem);
-            grid-template-columns: 2fr 1fr 2fr;
-        }
+    @include m.tablet {
+      @include m.grid(3, 2rem);
+      grid-template-columns: 2fr 1fr 2fr;
+    }
+  }
+
+  @include m.logo(3rem);
+
+  &__logo {
+    display: inline-flex;
+  }
+
+  &__logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    @include m.tablet {
+      align-items: flex-start;
+    }
+  }
+
+  &__titulo {
+    font-size: 2rem;
+
+    &--h3 {
+      margin-bottom: 1.6rem;
+      color: v.$rosado;
+      text-align: center;
+    }
+  }
+
+  &__cita {
+    display: block;
+    letter-spacing: 0.15rem;
+    color: v.$azul;
+    font-size: 1.4rem;
+
+    &::before {
+      content: "“";
     }
 
-    @include m.logo(3rem);
-
-    &__logo{
-        display: inline-flex;
+    &::after {
+      content: "”";
     }
+  }
 
-    &__logo-container{
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    &--a {
+      font-size: 4rem;
+      display: flex;
+      gap: 0.5rem;
+      color: v.$azul;
+      transition: all 0.3s ease-in-out;
+      justify-content: center;
+      align-items: center;
+
+      @include m.tablet {
+        justify-content: flex-start;
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: v.$magenta;
+      }
+    }
+  }
+
+  &__info {
+    &--p {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      color: v.$azul;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.copyright {
+  background-color: v.$azul;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: v.$blanco;
+
+  &__grid{
+    @include m.container;
+
+    @include m.tablet {
+        @include m.container-sm;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all 0.3s ease-in-out;
+        justify-content: space-between;
+    }
+  }
 
-        @include m.tablet{
-            align-items: flex-start;
+  &__p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    &:first-of-type {
+        margin-bottom: 0.5rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
         }
     }
-
-    &__titulo{
-        font-size: 2rem;
-
-        &--h3{
-            margin-bottom: 1.6rem;
-            color: v.$rosado;
-            text-align: center;
-        }
-    }
-
-    &__cita{
-        display: block;
-        letter-spacing: .15rem;
-        color: v.$azul;
-        font-size: 1.4rem;
-
-        &::before{
-            content: '“';
-        }
-
-        &::after{
-            content: '”';
-        }
-    }
-
-    &__social{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-
-        
-        &--a{
-            font-size: 4rem;
-            display: flex;
-            gap: 0.5rem;
-            color: v.$azul;
-            transition: all 0.3s ease-in-out;
-            justify-content: center;
-            align-items: center;
-
-            @include m.tablet{
-                justify-content: flex-start;
-                font-size: 3rem;
-            }
-
-            &:hover{
-                color: v.$magenta;
-            }
-        }
-    }
-
-    &__info{
-
-        &--p{
-            font-size: 1.4rem;
-            margin-bottom: .5rem;
-            text-align: center;
-            color: v.$azul;
-
-            &:last-of-type{
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    
+  }
 }

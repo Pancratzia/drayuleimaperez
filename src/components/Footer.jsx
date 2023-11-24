@@ -9,7 +9,7 @@ const Footer = () => {
           <Logo bloque="footer" />
           <br />
           <q className="footer__cita">
-            Enalteciendo cada étapa de la mujer con la mejor atención y
+            Enalteciendo cada etapa de la mujer con la mejor atención y
             experiencia
           </q>
         </div>
@@ -49,10 +49,28 @@ const Footer = () => {
         <div className="footer__info">
           <h3 className="footer__titulo--h3">Información</h3>
           <p className="footer__info--p">
-            Carrera 18 entre Calles 23 y 24. Edificio Cavendes. Primer Piso,
-            Consultorio 1-6
+            <i className="fa-solid fa-location-dot"></i> Carrera 18 entre Calles
+            23 y 24. Edificio Cavendes. Primer Piso, Consultorio 1-6
           </p>
-          <p className="footer__info--p">Barquisimeto - Venezuela</p>
+          <p className="footer__info--p">
+            <i className="fa-solid fa-earth-americas"></i> Barquisimeto -
+            Venezuela
+          </p>
+
+          <p className="footer__info--p">
+            <i className="fa-solid fa-clock"></i> Lunes, Miércoles y Viernes.
+            8:00 am - 2:00 pm
+          </p>
+        </div>
+      </div>
+
+      <div className="copyright">
+        <div className="copyright__grid">
+          <p className="copyright__p">
+            © {new Date().getFullYear()} Dra. Yuleima Pérez. Todos los derechos reservados.
+          </p>
+
+          <p className="copyright__p">Diseñado por Arla Inc</p>
         </div>
       </div>
     </footer>
