@@ -12,7 +12,7 @@ const Hero = () => {
           <p className="hero__texto">
             Por más de 20 años, la Dra. Yuleima Pérez ha brindado un servicio de
             alta calidad a miles de pacientes, quienes pueden contar con un
-            profesional de la salud con gran dedicación, excelente trato y gran experiencia.
+            profesional con gran dedicación, excelente trato y amplia experiencia en el área.
           </p>
 
           <a href="#" className="hero__boton">
