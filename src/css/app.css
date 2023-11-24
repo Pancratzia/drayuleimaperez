@@ -359,6 +359,7 @@ ul {
 }
 
 .footer {
+  margin-top: 2rem;
   background-color: #fff;
   padding: 2rem 0;
 }
@@ -375,7 +376,7 @@ ul {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
   }
 }
 .footer__logo {
@@ -416,6 +417,11 @@ ul {
 .footer__titulo {
   font-size: 2rem;
 }
+.footer__titulo--h3 {
+  margin-bottom: 1.6rem;
+  color: #d38db2;
+  text-align: center;
+}
 .footer__cita {
   display: block;
   letter-spacing: 0.15rem;
@@ -427,6 +433,38 @@ ul {
 }
 .footer__cita::after {
   content: "”";
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__social--a {
+  font-size: 4rem;
+  display: flex;
+  gap: 0.5rem;
+  color: #304472;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer__social--a {
+    justify-content: flex-start;
+    font-size: 3rem;
+  }
+}
+.footer__social--a:hover {
+  color: #ab1d6c;
+}
+.footer__info--p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #304472;
+}
+.footer__info--p:last-of-type {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
