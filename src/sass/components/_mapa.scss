@@ -1,0 +1,52 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.mapa {
+
+    margin-top: 2rem;
+
+    &__titulo{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: clamp(2rem, 2.5vw, 2.8rem);
+        margin-bottom: 2rem;
+        color: v.$magenta;
+    }
+  &__contenedor {
+    @include m.container;
+    min-height: 30rem;
+    height: 30rem;
+  }
+
+  .leaflet-container {
+    height: 100%;
+  }
+
+  .leaflet-popup-content{
+    width: auto;
+  }
+
+  &__popup{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        max-width: 4rem;
+    }
+
+    div{
+        text-align: center;
+        h4{
+            font-size: 1.4rem;
+        }
+        p{
+            margin: .2rem 0;
+            font-size: 1.2rem;
+        }
+        small{
+            font-size: 1rem;
+        }
+    }
+  }
+}

@@ -41,7 +41,7 @@ const Footer = () => {
               target="_blank"
               className="footer__social--a"
             >
-              <i class="fa-regular fa-envelope"></i>
+              <i className="fa-regular fa-envelope"></i>
             </a>
           </div>
         </div>

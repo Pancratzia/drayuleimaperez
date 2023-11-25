@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
+import Mapa from "./components/Mapa"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <div className="contenido">
         <Hero />
 
+        <Mapa />
         <Footer />
       </div>
       
