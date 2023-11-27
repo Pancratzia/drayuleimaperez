@@ -2,15 +2,12 @@
 @use "../base/mixins" as m;
 .mapa {
 
-    margin-top: 2rem;
+  margin-top: 2rem;
 
-    &__titulo{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: clamp(2rem, 2.5vw, 2.8rem);
-        margin-bottom: 2rem;
-        color: v.$magenta;
-    }
+  &__titulo{
+    @include m.titulo;
+  }
+  
   &__contenedor {
     @include m.container;
     min-height: 30rem;

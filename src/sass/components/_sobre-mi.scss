@@ -1,0 +1,46 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+
+.sobremi {
+  margin-top: 2rem;
+  
+
+  &__titulo{
+    @include m.titulo;
+  }
+
+  &__grid {
+    @include m.container;
+    @include m.grid(1, 2rem);
+  }
+
+  @include m.img-personalizada;
+
+  &__contenido {
+    background-color: v.$blanco;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  &__h3 {
+    @include m.titulo;
+    color: v.$azul;
+    margin: 0;
+  }
+
+  &__subtitulo {
+    color: v.$rosado;
+    text-align: center;
+    font-style: italic;
+    margin: 1.2rem 0;
+    font-weight: 700;
+  }
+
+  &__texto {
+    color: v.$gris;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.4rem;
+  }
+}
