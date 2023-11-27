@@ -537,6 +537,7 @@ ul {
 .copyright__p {
   font-size: 1.2rem;
   font-weight: 700;
+  color: #fff;
 }
 .copyright__p:first-of-type {
   margin-bottom: 1.6rem;

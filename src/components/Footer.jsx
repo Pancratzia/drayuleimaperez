@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -70,7 +69,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Dra. Yuleima Pérez. Todos los derechos reservados.
           </p>
 
-          <p className="copyright__p">Diseñado por Arla Inc</p>
+          <a href="https://github.com/ARLA-Dev" rel="noreferrer" target="_blank" className="copyright__p">Diseñado por ARLA</a>
         </div>
       </div>
     </footer>
