@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 .mapa {
 
-  margin-top: 2rem;
+  margin-top: 5rem;
 
   &__titulo{
     @include m.titulo;

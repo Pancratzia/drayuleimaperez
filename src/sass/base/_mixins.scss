@@ -100,11 +100,10 @@
 
   &__img {
     position: relative;
-
     width: 85%;
 
     @include tablet {
-        width: 70%;
+      width: 70%;
     }
     
     &::after {
@@ -130,6 +129,6 @@
   text-align: center;
   text-transform: uppercase;
   font-size: clamp(2rem, 2.5vw, 2.8rem);
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: v.$magenta;
 }
