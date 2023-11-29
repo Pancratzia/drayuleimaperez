@@ -416,6 +416,7 @@ ul {
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
+  place-items: center;
   width: 100%;
   background-color: #fff;
   padding: 2rem;
@@ -479,6 +480,45 @@ ul {
   .sobremi__texto {
     font-size: 1.6rem;
   }
+}
+.sobremi__aside {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.carta {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: rgba(171, 29, 108, 0.1) 10px 15px 10px;
+  border-radius: 2rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.carta:hover {
+  border: 0.2rem solid #d38db2;
+}
+.carta__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  margin-bottom: 5rem;
+  color: #ab1d6c;
+  font-size: clamp(1.6rem, 3vw, 1.8rem);
+  margin: 0;
+  color: #304472;
+  text-transform: capitalize;
+}
+.carta__img {
+  max-height: 10rem;
+  width: auto;
+  display: block;
+  margin: 1rem auto;
+}
+.carta__texto {
+  color: #74747c;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: center;
 }
 
 .mapa {

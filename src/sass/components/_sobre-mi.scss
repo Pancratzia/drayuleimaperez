@@ -46,14 +46,13 @@
         background-color: v.$rosado;
       }
 
-    }
-
-    
+    } 
   }
 
   &__grid-contenido {
     @include m.grid(1, 2rem);
     @include m.container;
+    place-items: center;
     width: 100%;
     
     @include m.tablet {
@@ -116,5 +115,9 @@
     @include m.tablet {
       font-size: 1.6rem;
     }
+  }
+
+  &__aside{
+    @include m.grid(1, 1rem);
   }
 }

@@ -1,0 +1,36 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.carta{
+    background-color: v.$blanco;
+    padding: 2rem;
+    box-shadow: rgba(v.$magenta, 0.1) 10px 15px 10px;
+    border-radius: 2rem;
+    border: .2rem solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        border: .2rem solid v.$rosado;
+    }
+
+    &__titulo{
+        @include m.titulo;
+        font-size: clamp(1.6rem, 3vw, 1.8rem);
+        margin: 0;
+        color: v.$azul;
+        text-transform: capitalize;
+    }
+
+    &__img{
+        max-height: 10rem;
+        width: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    &__texto{
+        color: v.$gris;
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+        text-align: center;
+    }
+}

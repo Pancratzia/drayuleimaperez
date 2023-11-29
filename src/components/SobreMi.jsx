@@ -1,3 +1,6 @@
+import { CARTAS } from "../data/data";
+import { Carta } from "./Carta";
+
 const SobreMi = () => {
   return (
     <div className="sobremi">
@@ -38,10 +41,9 @@ const SobreMi = () => {
         </div>
 
         <aside className="sobremi__aside">
-          <div className="carta">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum distinctio cum exercitationem error, nesciunt modi!</p>
-          </div>
+          {CARTAS.map((carta) => (
+            <Carta key={carta.id} {...carta} />
+          ))}
         </aside>
 
       </div>
