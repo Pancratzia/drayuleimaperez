@@ -52,7 +52,7 @@ const Header = () => {
             Servicios
           </a>
           <a href="#" className="nav__enlace">
-            Trabajos
+            Galería
           </a>
           <a href="#" className="nav__enlace">
             Horario
@@ -73,7 +73,7 @@ const Header = () => {
             Servicios
           </a>
           <a href="#" className="nav--desktop__enlace">
-            Trabajos
+            Galería
           </a>
           <a href="#" className="nav--desktop__enlace">
             Horario

@@ -4,7 +4,7 @@ import { Carta } from "./Carta";
 const SobreMi = () => {
   return (
     <div className="sobremi">
-      <h2 className="sobremi__titulo">¿Quién soy?</h2>
+      <h2 className="sobremi__titulo">Sobre Mí</h2>
 
       <div className="sobremi__grid">
         <div className="sobremi__grid-contenido">

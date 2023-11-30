@@ -521,6 +521,62 @@ ul {
   text-align: center;
 }
 
+.horario {
+  height: 40rem;
+  background-image: url("/img/consultorio.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.horario::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.horario__contenido {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  color: #d38db2;
+  z-index: 10;
+  text-align: center;
+}
+.horario__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  margin-bottom: 5rem;
+  color: #ab1d6c;
+  color: #fff;
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+.horario__texto, .horario__texto--cita {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+.horario__texto--cita {
+  font-style: italic;
+}
+.horario__reloj {
+  color: #fff;
+  margin-top: 5rem;
+}
+.horario__reloj svg {
+  width: 7rem;
+  height: 7rem;
+}
+
 .mapa {
   margin-top: 5rem;
 }
