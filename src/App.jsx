@@ -1,9 +1,11 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
-import Footer from "./components/Footer"
-import Mapa from "./components/Mapa"
 import SobreMi from "./components/SobreMi"
-import { Horario } from "./components/horario"
+import Servicios from "./components/Servicios"
+import Horario from "./components/horario"
+import Mapa from "./components/Mapa"
+import Footer from "./components/Footer"
+
 
 
 
@@ -15,6 +17,7 @@ function App() {
       <div className="contenido">
         <Hero />
         <SobreMi />
+        <Servicios />
         <Horario />
         <Mapa />
         <Footer />

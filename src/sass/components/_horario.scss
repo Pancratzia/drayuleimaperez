@@ -3,7 +3,7 @@
 
 .horario {
   height: 40rem;
-  background-image: url("/img/consultorio.jpg");
+  background-image: url("/img/consultorio.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,15 +25,19 @@
   }
 
   &__contenido {
-    @include m.container;
-    color: v.$rosado;
+    background-color: rgba(v.$blanco, 0.8);
+    margin: 0 auto;
+    max-width: 95%;
+    color: v.$magenta;
     z-index: 10;
     text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
   }
 
   &__titulo {
     @include m.titulo;
-    color: v.$blanco;
+    color: v.$magenta;
     font-size: clamp(3rem, 5vw, 5rem);
   }
 
@@ -52,7 +56,7 @@
 
   &__reloj {
 
-    color: v.$blanco;
+    color: v.$magenta;
     margin-top: 5rem;
 
     svg {
