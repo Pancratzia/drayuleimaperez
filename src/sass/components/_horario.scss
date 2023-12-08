@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 
 .horario {
-  height: 40rem;
+  height: 50rem;
   background-image: url("/img/consultorio.jpeg");
   background-attachment: fixed;
   background-position: center;
@@ -26,7 +26,7 @@
 
   &__contenido {
     background-color: rgba(v.$blanco, 0.8);
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 95%;
     color: v.$magenta;
     z-index: 10;
@@ -45,12 +45,19 @@
 
     margin-bottom: 1rem;
     font-weight: 700;
-
     font-size: clamp(1.6rem, 3vw, 2rem);
+  }
 
-    &--cita {
-      @extend .horario__texto;
-      font-style: italic;
+  &__boton {
+    @include m.boton(v.$azul, v.$blanco);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
     }
   }
 

@@ -12,7 +12,7 @@ const SobreMi = () => {
           <div className="sobremi__imagen">
             <div className="sobremi__img">
               <img
-                src="https://images.pexels.com/photos/8376187/pexels-photo-8376187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/img/DraSentada.jpeg"
                 alt="Dra. Yuleima Perez"
               />
             </div>

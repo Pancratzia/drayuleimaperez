@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="hero__imagen">
           <div className="hero__img">
             <img
-              src="/img/yuleima.webp"
+              src="/img/DraDePie.jpeg"
               alt="Fotografría de la Dra. Yuleima Pérez"
             />
           </div>

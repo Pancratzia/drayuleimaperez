@@ -8,7 +8,10 @@ const Horario = () => {
           Lunes, Miércoles y Viernes de 8:00am a 2:00pm
         </p>
 
-        <p className="horario__texto--cita">Previa Cita</p>
+        <a href="#" className="horario__boton">
+        <i className="fa-brands fa-whatsapp"></i>
+          Solicita tu cita
+        </a>
 
         <div className="horario__reloj">
           <i className="fa-regular fa-calendar"></i>
