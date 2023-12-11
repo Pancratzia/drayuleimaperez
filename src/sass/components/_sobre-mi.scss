@@ -16,7 +16,7 @@
     width: min(90%, 140rem);
     margin: 0 auto;
     @include m.grid(1, 2rem);
-    @include m.tablet {
+    @include m.desktop {
       @include m.grid(2, 1rem);
       grid-template-columns: 2fr 1fr; 
     }

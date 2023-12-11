@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { FOTOS } from '../data/data';
 
-export const Galeria = () => {
+const Galeria = () => {
 
   const randomFotos = FOTOS.sort(() => Math.random() - 0.5).slice(0, 16);
 
@@ -44,3 +44,5 @@ export const Galeria = () => {
     </section>
   );
 }
+
+export default Galeria;
