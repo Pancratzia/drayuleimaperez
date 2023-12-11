@@ -11,10 +11,12 @@
     "sass": "sass src/sass:src/css --watch"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1"
+    "react-leaflet": "^4.2.1",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

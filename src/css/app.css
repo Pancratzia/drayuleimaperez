@@ -592,6 +592,60 @@ ul {
   height: 2rem;
 }
 
+.galeria {
+  padding: 5rem 0;
+  background-color: #d38db2;
+}
+.galeria__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  margin-bottom: 5rem;
+  color: #ab1d6c;
+  color: #fff;
+}
+.galeria__grid {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.galeria__swiper {
+  width: 100%;
+  height: 60rem;
+  max-height: 60rem;
+  height: 100%;
+}
+.galeria__img {
+  object-fit: cover;
+  height: 100%;
+}
+.galeria__slide {
+  height: 100%;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1b2cb;
+  border: 0.5rem solid #fff;
+  border-radius: 15rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+.galeria__slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-wrapper {
+  box-sizing: inherit !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+  opacity: 0.8 !important;
+  font-weight: bold;
+}
+
 .horario {
   height: 50rem;
   background-image: url("/img/consultorio.jpeg");

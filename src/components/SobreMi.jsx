@@ -1,7 +1,15 @@
+import { useEffect } from "react";
 import { CARTAS } from "../data/data";
 import { Carta } from "./Carta";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SobreMi = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="sobremi">
       <h2 className="sobremi__titulo">Sobre Mí</h2>
@@ -14,6 +22,7 @@ const SobreMi = () => {
               <img
                 src="/img/DraSentada.jpeg"
                 alt="Dra. Yuleima Perez"
+                data-aos="zoom-in"
               />
             </div>
           </div>
