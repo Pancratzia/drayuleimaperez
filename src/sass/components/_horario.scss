@@ -48,19 +48,6 @@
     font-size: clamp(1.6rem, 3vw, 2rem);
   }
 
-  &__boton {
-    @include m.boton(v.$azul, v.$blanco);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-
   &__reloj {
 
     color: v.$magenta;

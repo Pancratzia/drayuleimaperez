@@ -1,6 +1,6 @@
 const Servicios = () => {
   return (
-    <section className="servicios"> 
+    <main className="servicios"> 
 
       <h2 className="servicios__titulo">Mis Servicios</h2>
 
@@ -35,9 +35,15 @@ const Servicios = () => {
             <li className="servicios__servicio">Cirugías ginecológicas y obstétricas</li>
           </ul>
         </div>
-
       </div>
-    </section>
+
+      <div className="servicios__contenedor-boton">
+        <a href="#" className="servicios__boton">
+          <i className="fa-brands fa-whatsapp"></i>
+            Solicita tu cita
+        </a>
+      </div>
+    </main>
   );
 };
 
