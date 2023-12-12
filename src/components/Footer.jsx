@@ -66,10 +66,19 @@ const Footer = () => {
       <div className="copyright">
         <div className="copyright__grid">
           <p className="copyright__p">
-            © {new Date().getFullYear()} Dra. Yuleima Pérez. Todos los derechos reservados.
+            © {new Date().getFullYear()} Dra. Yuleima Pérez. Todos los derechos
+            reservados.
           </p>
 
-          <a href="https://github.com/ARLA-Dev" rel="noreferrer" target="_blank" className="copyright__p">Diseñado por ARLA</a>
+            <a
+              href="https://github.com/ARLA-Dev"
+              rel="noreferrer"
+              target="_blank"
+              className="copyright__p copyright__p--a"
+            >
+              <img src="/img/ARLA.png" alt="Logo de ARLA" />
+              Diseñado por ARLA
+            </a>
         </div>
       </div>
     </footer>
