@@ -5,7 +5,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const SobreMi = () => {
-
   useEffect(() => {
     Aos.init();
   }, []);
@@ -16,7 +15,6 @@ const SobreMi = () => {
 
       <div className="sobremi__grid">
         <div className="sobremi__grid-contenido">
-
           <div className="sobremi__imagen">
             <div className="sobremi__img">
               <img
@@ -28,7 +26,6 @@ const SobreMi = () => {
           </div>
 
           <div className="sobremi__contenido">
-
             <h3 className="sobremi__h3">Dra. Yuleima Pérez</h3>
 
             <p className="sobremi__subtitulo">
@@ -36,16 +33,20 @@ const SobreMi = () => {
             </p>
 
             <p className="sobremi__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              ipsam dolores ratione maiores, quos iste minus optio nemo natus.
-              Quaerat labore, deserunt ullam atque delectus nihil nulla in
-              facere eos vero. Vel unde amet aliquam quia excepturi minima, eum
-              alias animi, itaque necessitatibus ea laudantium? Odit id itaque
-              modi, ut a corporis sed optio possimus molestiae amet sunt
-              voluptatem, ad pariatur, natus nam ex. Excepturi, placeat atque.
-              Dolore culpa, officiis illo sunt minus ratione nulla.
+              Soy la Dra. Yuleima Pérez, especialista en Ginecología y
+              Obstetricia, comprometida con la salud femenina. Con más de dos
+              décadas de experiencia, he sido guía en el viaje de miles de
+              mujeres hacia su bienestar. Mi enfoque va más allá de la mera
+              práctica médica; se trata de ofrecer un cuidado cálido,
+              personalizado y experto en cada etapa de la vida de mis pacientes.
+              <br />
+              Graduada de la Universidad Centro Occidental Lisandro Alvarado de
+              Barquisimeto, mi dedicación se refleja en cada caso. Cada paciente
+              recibe atención calma y personalizada, asegurando que su
+              experiencia de salud sea lo más confortable posible. Como tu
+              médico, me esfuerzo por explicar los términos médicos más
+              complejos para que entiendas plenamente tu situación.
             </p>
-
           </div>
         </div>
 
@@ -54,7 +55,6 @@ const SobreMi = () => {
             <Carta key={carta.id} {...carta} />
           ))}
         </aside>
-
       </div>
     </div>
   );
