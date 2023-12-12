@@ -8,6 +8,17 @@ const Header = () => {
     setAbierto(!abierto);
   };
 
+  const smoothScrollTo = (e, id) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({
+        block: "center",
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <header className="header">
       <div className="header__info">
@@ -42,43 +53,43 @@ const Header = () => {
         </div>
 
         <nav className={abierto ? "nav abierto" : "nav cerrado"}>
-          <a href="#" className="nav__enlace">
+          <a href="#home" className="nav__enlace" onClick={e => smoothScrollTo(e, "#home")}>
             Home
           </a>
-          <a href="#" className="nav__enlace">
+          <a href="#sobremi" onClick={e => smoothScrollTo(e, "#sobremi")} className="nav__enlace">
             Sobre Mí
           </a>
-          <a href="#" className="nav__enlace">
+          <a href="#servicios"  onClick={e => smoothScrollTo(e, "#servicios")} className="nav__enlace">
             Servicios
           </a>
-          <a href="#" className="nav__enlace">
+          <a href="#galeria" onClick={e => smoothScrollTo(e, "#galeria")} className="nav__enlace">
             Galería
           </a>
-          <a href="#" className="nav__enlace">
+          <a href="#horario" onClick={e => smoothScrollTo(e, "#horario")} className="nav__enlace">
             Horario
           </a>
-          <a href="#" className="nav__enlace">
+          <a href="#ubicacion" onClick={e => smoothScrollTo(e, "#ubicacion")} className="nav__enlace">
             Ubicación
           </a>
         </nav>
 
         <nav className="nav--desktop">
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#home" onClick={e => smoothScrollTo(e, "#home")} className="nav--desktop__enlace">
             Home
           </a>
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#sobremi" onClick={e => smoothScrollTo(e, "#sobremi")} className="nav--desktop__enlace">
             Sobre Mí
           </a>
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#servicios" onClick={e => smoothScrollTo(e, "#servicios")} className="nav--desktop__enlace">
             Servicios
           </a>
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#galeria" onClick={e => smoothScrollTo(e, "#galeria")} className="nav--desktop__enlace">
             Galería
           </a>
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#horario"  onClick={e => smoothScrollTo(e, "#horario")} className="nav--desktop__enlace">
             Horario
           </a>
-          <a href="#" className="nav--desktop__enlace">
+          <a href="#ubicacion" onClick={e => smoothScrollTo(e, "#ubicacion")} className="nav--desktop__enlace">
             Ubicación
           </a>
         </nav>

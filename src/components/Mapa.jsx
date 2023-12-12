@@ -16,7 +16,7 @@ const Mapa = () => {
   });
   
   return (
-    <div className="mapa">
+    <div className="mapa" id="ubicacion">
       <h2 className="mapa__titulo">Mi Ubicación</h2>
       <div className="mapa__contenedor">
         <MapContainer center={position} zoom={16} scrollWheelZoom={true}>

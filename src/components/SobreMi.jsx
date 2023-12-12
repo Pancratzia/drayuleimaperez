@@ -10,7 +10,7 @@ const SobreMi = () => {
   }, []);
 
   return (
-    <div className="sobremi">
+    <div className="sobremi" id="sobremi">
       <h2 className="sobremi__titulo">Sobre Mí</h2>
 
       <div className="sobremi__grid">

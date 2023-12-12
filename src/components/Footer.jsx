@@ -76,8 +76,8 @@ const Footer = () => {
               target="_blank"
               className="copyright__p copyright__p--a"
             >
-              <img src="/img/ARLA.png" alt="Logo de ARLA" />
               Diseñado por ARLA
+              <img src="/img/ARLA.png" alt="Logo de ARLA" />
             </a>
         </div>
       </div>

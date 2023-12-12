@@ -11,7 +11,7 @@ const Horario = () => {
 
   return (
 
-    <section className="horario">
+    <section className="horario" id="horario">
       <div className="horario__contenido" 
         data-aos="fade-down"
         data-aos-easing="linear"

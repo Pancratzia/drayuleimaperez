@@ -10,7 +10,7 @@ const Galeria = () => {
 
   return (
     
-    <section className="galeria">
+    <section className="galeria" id="galeria">
 
       <h2 className="galeria__titulo">Mi Galería</h2>
 

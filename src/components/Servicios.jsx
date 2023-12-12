@@ -1,6 +1,6 @@
 const Servicios = () => {
   return (
-    <main className="servicios"> 
+    <main className="servicios" id="servicios"> 
 
       <h2 className="servicios__titulo">Mis Servicios</h2>
 
