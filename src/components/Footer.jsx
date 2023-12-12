@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://wa.me/584166542059?text=%C2%A1Hola,%20Doctora%20Yuleima!%20Estoy%20interesada%20en%20acudir%20a%20su%20consulta%20%F0%9F%98%8A"
+              href="https://wa.me/584166542059?text=%C2%A1Hola,%20Doctora%20Yuleima!%20Estoy%20interesada%20en%20acudir%20a%20su%20consulta"
               rel="noreferrer"
               target="_blank"
               className="footer__social--a"
