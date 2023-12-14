@@ -17,11 +17,27 @@ const SobreMi = () => {
         <div className="sobremi__grid-contenido">
           <div className="sobremi__imagen">
             <div className="sobremi__img">
+
+              <picture>
+                <source
+                  srcSet="/img/DraSentada.avif"
+                  type="image/avif"
+                />
+
+                <source 
+                  srcSet="/img/DraSentada.webp"
+                  type="image/webp"
+                />
+
               <img
-                src="/img/DraSentada.jpeg"
+                src="/img/DraSentada.png"
                 alt="Dra. Yuleima Perez"
                 data-aos="zoom-in"
+                width={"500px"}
+                loading="lazy"
               />
+
+              </picture>
             </div>
           </div>
 

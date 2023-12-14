@@ -23,10 +23,24 @@ const Hero = () => {
 
         <div className="hero__imagen">
           <div className="hero__img">
-            <img
-              src="/img/DraDePie.jpeg"
-              alt="Fotografría de la Dra. Yuleima Pérez"
-            />
+
+            <picture>
+              <source
+                srcSet="/img/DraDePie.avif"
+                type="image/avif"
+              />
+              <source
+                srcSet="/img/DraDePie.webp"
+                type="image/webp"
+              />
+              <img
+                src="/img/DraDePie.png"
+                alt="Fotografría de la Dra. Yuleima Pérez"
+                loading="lazy"
+                width={500}
+              />
+            </picture>
+
           </div>
         </div>
       </div>

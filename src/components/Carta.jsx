@@ -4,16 +4,33 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export const Carta = (props) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
-    useEffect(() => {
-        Aos.init();
-      }, []);
+  return (
+    <div className="carta" data-aos="flip-left">
+      <h1 className="carta__titulo">{props.titulo}</h1>
 
-    return (
-        <div className="carta" data-aos="flip-left">
-            <h1 className="carta__titulo">{props.titulo}</h1>
-            <img className="carta__img" src={props.imagen} alt={`Imagen de ${props.titulo}`} />
-            <p className="carta__texto">{props.texto}</p>
-        </div>
-    );
-}
+      <picture>
+        <source
+          srcSet={props.imagen + ".avif"}
+          type="image/avif"
+        />
+        <source
+          srcSet={props.imagen + ".webp"}
+          type="image/webp"
+        />
+        <img
+          className="carta__img"
+          src={props.imagen + ".png"}
+          alt={`Imagen de ${props.titulo}`}
+          loading="lazy"
+          width={"100px"}
+        />
+      </picture>
+
+      <p className="carta__texto">{props.texto}</p>
+    </div>
+  );
+};
