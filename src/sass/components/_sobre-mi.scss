@@ -30,7 +30,7 @@
     box-shadow: rgba(v.$negro, 0.1) 15px 25px 15px;
     position: relative;
 
-    @include m.tablet {
+    @include m.desktop {
 
       padding: 5rem 5rem 5rem 7rem;
       &::after {

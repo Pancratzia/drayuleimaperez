@@ -1,6 +1,0 @@
-- Home
-- Sobre mí
-- Mis servicios
-- Mis trabajos
-- Ubicación
-- Horario
