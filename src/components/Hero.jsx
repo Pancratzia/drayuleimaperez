@@ -36,7 +36,6 @@ const Hero = () => {
               <img
                 src="/img/DraDePie.png"
                 alt="Fotografría de la Dra. Yuleima Pérez"
-                loading="lazy"
                 width={500}
               />
             </picture>

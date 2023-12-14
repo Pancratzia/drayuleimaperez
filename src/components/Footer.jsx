@@ -70,15 +70,19 @@ const Footer = () => {
             reservados.
           </p>
 
-            <a
-              href="https://github.com/ARLA-Dev"
-              rel="noreferrer"
-              target="_blank"
-              className="copyright__p copyright__p--a"
-            >
-              Diseñado por ARLA
+          <a
+            href="https://github.com/ARLA-Dev"
+            rel="noreferrer"
+            target="_blank"
+            className="copyright__p copyright__p--a"
+          >
+            <p>Diseñado por</p>
+
+            <div className="copyright__arla">
+              <span className="copyright__arla--span">ARLA</span>
               <img src="/img/ARLA.png" alt="Logo de ARLA" />
-            </a>
+            </div>
+          </a>
         </div>
       </div>
     </footer>
