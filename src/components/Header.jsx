@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Logo from "./Logo";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
   const [abierto, setAbierto] = useState(false);
