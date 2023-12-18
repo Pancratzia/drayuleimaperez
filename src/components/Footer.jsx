@@ -1,4 +1,6 @@
 import Logo from "./Logo";
+import { FaInstagram, FaWhatsapp, FaRegEnvelope, FaFacebook, FaLocationDot, FaEarthAmericas, FaClock } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -22,7 +24,16 @@ const Footer = () => {
               target="_blank"
               className="footer__social--a"
             >
-              <i className="fa-brands fa-instagram"></i>
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.facebook.com/drayuleimaperez/"
+              rel="noreferrer"
+              target="_blank"
+              className="footer__social--a"
+            >
+              <FaFacebook />
             </a>
 
             <a
@@ -31,7 +42,7 @@ const Footer = () => {
               target="_blank"
               className="footer__social--a"
             >
-              <i className="fa-brands fa-whatsapp"></i>
+              <FaWhatsapp />
             </a>
 
             <a
@@ -40,7 +51,7 @@ const Footer = () => {
               target="_blank"
               className="footer__social--a"
             >
-              <i className="fa-regular fa-envelope"></i>
+              <FaRegEnvelope />
             </a>
           </div>
         </div>
@@ -48,16 +59,16 @@ const Footer = () => {
         <div className="footer__info">
           <h3 className="footer__titulo--h3">Información</h3>
           <p className="footer__info--p">
-            <i className="fa-solid fa-location-dot"></i> Carrera 18 entre Calles
+            <FaLocationDot /> Carrera 18 entre Calles
             23 y 24. Edificio Cavendes. Primer Piso, Consultorio 1-6
           </p>
           <p className="footer__info--p">
-            <i className="fa-solid fa-earth-americas"></i> Barquisimeto -
+            <FaEarthAmericas /> Barquisimeto -
             Venezuela
           </p>
 
           <p className="footer__info--p">
-            <i className="fa-solid fa-clock"></i> Lunes, Miércoles y Viernes.
+            <FaClock /> Lunes, Miércoles y Viernes.
             8:00 am - 2:00 pm
           </p>
         </div>

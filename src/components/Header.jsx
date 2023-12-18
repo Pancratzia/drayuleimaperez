@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "./Logo";
+import { FaPhone, FaLocationDot } from "react-icons/fa6";
 
 const Header = () => {
   const [abierto, setAbierto] = useState(false);
@@ -24,12 +25,12 @@ const Header = () => {
       <div className="header__info">
         <div className="header__info--container">
           <a className="header__info--a" href="https://wa.me/584166542059?text=%C2%A1Hola,%20Doctora%20Yuleima!%20Estoy%20interesada%20en%20acudir%20a%20su%20consulta" rel="noreferrer" target="_blank">
-            <i className="fa-solid fa-phone"></i>
+            <FaPhone />
             (+58) 416-654-2059
           </a>
 
           <a className="header__info--a" href="https://maps.app.goo.gl/ZvhhZbCz4RT61ymW7" rel="noreferrer" target="_blank">
-            <i className="fa-solid fa-location-dot"></i>
+            <FaLocationDot />
             Edif. Cavendes, consultorio 1-6
           </a>
         </div>

@@ -1,3 +1,5 @@
+import { FaWhatsapp } from "react-icons/fa6";
+
 const Servicios = () => {
   return (
     <main className="servicios" id="servicios"> 
@@ -39,7 +41,7 @@ const Servicios = () => {
 
       <div className="servicios__contenedor-boton">
         <a href="https://wa.me/584166542059?text=%C2%A1Hola,%20Doctora%20Yuleima!%20Estoy%20interesada%20en%20acudir%20a%20su%20consulta" className="servicios__boton" rel="noreferrer" target="_blank">
-          <i className="fa-brands fa-whatsapp"></i>
+          <FaWhatsapp />
             Solicita tu cita
         </a>
       </div>

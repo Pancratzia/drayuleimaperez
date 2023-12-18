@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { FaCalendarDays } from "react-icons/fa6";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -24,7 +26,7 @@ const Horario = () => {
         </p>
 
         <div className="horario__reloj">
-          <i className="fa-regular fa-calendar"></i>
+          <FaCalendarDays />
         </div>
       </div>
     </section>
