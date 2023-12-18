@@ -38,6 +38,8 @@ const Galeria = () => {
                   src={foto + ".png"}
                   alt="Foto Slider"
                   className="galeria__img"
+                  width={353}
+                  height={"auto"}
                 />
               </picture>
             </SwiperSlide>

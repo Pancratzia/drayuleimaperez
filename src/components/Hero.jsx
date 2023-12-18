@@ -36,7 +36,8 @@ const Hero = () => {
               <img
                 src="/img/DraDePie.png"
                 alt="Fotografría de la Dra. Yuleima Pérez"
-                width={500}
+                width={416}
+                height={"auto"}
               />
             </picture>
 

@@ -28,7 +28,8 @@ export const Carta = (props) => {
           src={props.imagen + ".png"}
           alt={`Imagen de ${props.titulo}`}
           loading="lazy"
-          width={"100px"}
+          width={100}
+          height={"auto"}
         />
       </picture>
 

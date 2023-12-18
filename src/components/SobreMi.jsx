@@ -35,7 +35,8 @@ const SobreMi = () => {
                 src="/img/DraSentada.png"
                 alt="Dra. Yuleima Perez"
                 data-aos="zoom-in"
-                width={"500px"}
+                width={577.7}
+                height={"auto"}
                 loading="lazy"
               />
 
