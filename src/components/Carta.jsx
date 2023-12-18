@@ -5,7 +5,9 @@ import { useEffect } from "react";
 
 export const Carta = (props) => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true,
+    });
   }, []);
 
   return (

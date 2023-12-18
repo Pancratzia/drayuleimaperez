@@ -6,7 +6,9 @@ import "aos/dist/aos.css";
 
 const SobreMi = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true,
+    });
   }, []);
 
   return (
