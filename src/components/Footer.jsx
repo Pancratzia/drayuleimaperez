@@ -59,8 +59,7 @@ const Footer = () => {
         <div className="footer__info">
           <h3 className="footer__titulo--h3">Información</h3>
           <p className="footer__info--p">
-            <FaLocationDot /> Carrera 18 entre Calles
-            23 y 24. Edificio Cavendes. Primer Piso, Consultorio 1-6
+            <FaLocationDot /> Carrera 18, esquina Calle 23. Edificio Centro Empresarial. Cuarto Piso, Oficina 4-7.
           </p>
           <p className="footer__info--p">
             <FaEarthAmericas /> Barquisimeto -

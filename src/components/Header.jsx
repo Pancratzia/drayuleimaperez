@@ -29,9 +29,9 @@ const Header = () => {
             (+58) 416-654-2059
           </a>
 
-          <a className="header__info--a" href="https://maps.app.goo.gl/ZvhhZbCz4RT61ymW7" rel="noreferrer" target="_blank">
+          <a className="header__info--a" href="https://maps.app.goo.gl/XjatLmLLpe5HvP5d6" rel="noreferrer" target="_blank">
             <FaLocationDot />
-            Edif. Cavendes, consultorio 1-6
+            Edif. Centro Empresarial, Consultorio 4-7
           </a>
         </div>
       </div>

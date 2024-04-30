@@ -4,7 +4,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Mapa = () => {
-  const position = [10.0650424, -69.314625];
+  const position = [10.0651572, -69.3142143];
   
   let violet = new L.Icon({
     iconUrl: '/img/marker.png',
@@ -32,7 +32,7 @@ const Mapa = () => {
                 </aside>
                 <div>
                   <h4>Dra. Yuleima Pérez</h4>
-                  <p>Edif. Cavendes, consultorio 1-6</p>
+                  <p>Edif. Centro Empresarial, Consultorio 4-7</p>
                   <small>Consultorio Médico</small>
                 </div>
               </div>
